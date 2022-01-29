@@ -98,6 +98,7 @@ else {
 ```
 
 - **if ~ else if ~ else** 표현:
+
 ```csharp
 if (...) {
 	// . . .
@@ -321,6 +322,7 @@ class Sample {
 ### Resource ID 명명 규칙
 기본적으로 소문자와 밑줄(_)만으로 명명하는 것을 원칙으로 한다.
 #### View ID
+
 | prefix | 説明 |
 | --- | --- |
 | action_ | Button 등을 통해 사용자의 액션을 반영하는 UI |
