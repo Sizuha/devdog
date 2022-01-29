@@ -335,7 +335,7 @@ class Sample {
 | list_ | ListView, RecyclerView 같이 Adapter를 이용해서 내부에 다수의 Item View를 표시하는 UI |
 | group_ | 복수의 View를 그룹화해서 관리하기 위한 목적의 UI |
 
-내용상 중복되는 UI가 있는 경우, 명명 규칙은 위에서 부터 우선적으로 적용한다. 예를 들면, 텍스트를 표시하는 UI이지만 버튼처럼 쓰이는 경우는 ''action_''을 붙인다.
+내용상 중복되는 UI가 있는 경우, 명명 규칙은 위에서 부터 우선적으로 적용한다. 예를 들면, 텍스트를 표시하는 UI이지만 버튼처럼 쓰이는 경우는 **action_** 을 붙인다.
 
 #### strings
 
