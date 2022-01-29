@@ -1,4 +1,4 @@
-# DevDog
+# 目次
 
 ## 교육자료
 [Programming 기본 개념](programming_basic.md)
