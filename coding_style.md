@@ -21,6 +21,7 @@
   - 만약 굳이 스페이스를 써야 한다면, 들여쓰기는 전부 스페이스로만 한다. 즉, 탭과 섞어서 사용하지 말것!
   - 탭 문자에 대한 처리가 에디터에 따라 다를 수 있기에 섞어쓰면 다른 환경에서 볼때 정렬이 흐트러짐.
 - 제어블럭이 발생할 때, 즉 제어 범위가 한 단계 깊이 들어가는 경우에 들여쓴다.
+
 ```csharp
 if (...) {
 	// 조건 처리에 의해 제어 깊이가 발생.
@@ -35,6 +36,7 @@ struct XXX {
 }
 ```
 - 명령문이 한 라인에서 끝나지 않고 다음 라인까지 이어질 때, **그 다음의 라인**부터 들여쓴다.
+
 ```csharp
 someFunc(arg1, 
 	arg2, // 들여쓰기
@@ -57,6 +59,7 @@ someFunc(arg1,
 ### 연산자
 - 기본적으로 이항 연산자의 양쪽에는 공백을 한칸 씩 둔다.
   - 단, 우선 순위를 강조하고자 할 때 붙여서 쓸 수도 있다. 다만 괄호를 확실하게 해주는게 더 나을지도.
+
 ```csharp
 int a = (1 + 2*3) / 4;
 ```
@@ -76,6 +79,7 @@ int a = (1 + 2*3) / 4;
 #### if/else
 - if와 else문장이 함께 나올 때는, if절 다음에는 긍정 조건을 else에는 부정 조건 때의 처리를 기술함을 원칙으로 한다.
   - 이는 if ~ else 형식의 문장을 봤을 때, 가능한 일관되게 해석이 되도록 하기 위함이다.
+
 ```csharp
 if (condition) {
 	// when condition == true.
@@ -93,7 +97,7 @@ else {
 }
 ```
 
-- '''if ~ else if ~ else ''' 표현:
+- **if ~ else if ~ else** 표현:
 ```csharp
 if (...) {
 	// . . .
@@ -110,6 +114,7 @@ else {
 ```
 
 - 다수의 **or** , **and** 로 연결된 긴 조건식이 있는 경우:
+
 ```csharp
 if (CONDITION1 ||
 	CONDITION2 ||
@@ -132,12 +137,14 @@ if (CONDITION1 ||
 - C언어의 경우: if나 while등의 조건식에서, 대입 연산(=)과 비교 연산(==)의 오타로 인한 오류 방지를 위해 다음과 같이 한다.
   - 조건식에서 대입 연산자는 쓰지 않는다. ==의 오타로 오인할 수 있으므로.
   - 변수와 상수를 비교할 경우, 상수를 먼저 쓴다. 오타일 경우, 컴파일 단계에서 오류가 나도록.
+
 ```csharp
 if (10 == a) { ... }
 ```
 
 - C++은 조건식의 결과값이 bool 타입이 되어야 하므로, C에서와 같은 오타로 인한 오류는 방지가 되지만, 혼동을 방지하기 위해 조건식 안에서 대입 연산은 가능한 하지 말자.
   - 조건식의 판정을 bool 타입으로 하기 때문에 다음과 같이 true/false를 명시적으로 써줄 필요는 없다.
+
 ```csharp
 // 다음은 의미상의 중복
 if (a == true) { ... }
@@ -147,6 +154,7 @@ if (a = true) { ... }
 ```
 
 #### switch
+
 ```csharp
 switch (condition) {
 	case CASE_1:
@@ -174,6 +182,7 @@ switch (condition) {
 ```
 
 #### wile, do ~ while
+
 ```c
 while {
 	// . . .
@@ -186,6 +195,7 @@ do {
 do ~ while에서 while은 **}** 다음에 쓴다. 다음 행으로 내려서 쓰면 일반 while문과 혼동될 수 있기 때문에.
 
 #### for
+
 ```csharp
 for (int i = 0; i < MAX, i++) {
 	// . . .
@@ -229,6 +239,7 @@ final int some = cond > 0
 
 ### 함수
 #### 함수 선언
+
 ```java
 void Func(int argName, ...) {
 	// TODO ...
@@ -250,6 +261,7 @@ void FuncB(int& out_result) { ... }
 #### 함수 호출
 - 제어문과 구분하기 위해, 함수명에 ( )를 공백없이 붙여서 쓴다.
 - 함수 인자가 길어지는 경우:
+
 ```csharp
 Func(arg_1,
 	arg_2,
@@ -265,6 +277,7 @@ result = Func(arg_1,
 - 매서드와 프로퍼티는 대문자로 시작하고 낙타법으로 명명한다.
 - 맴버변수는 m_ 으로 시작하고 낙타법으로 명명한다.
   - 단 public 맴버변수는 프로퍼티 작명과 동일한 규칙을 적용한다.
+
 ```csharp
 class Sample {
 	public string Name;
@@ -323,6 +336,7 @@ class Sample {
 내용상 중복되는 UI가 있는 경우, 명명 규칙은 위에서 부터 우선적으로 적용한다. 예를 들면, 텍스트를 표시하는 UI이지만 버튼처럼 쓰이는 경우는 ''action_''을 붙인다.
 
 #### strings
+
 | prefix | 説明 |
 | --- | --- |
 | err_ | 에러 메세지 |
@@ -331,6 +345,7 @@ class Sample {
 
 #### 리소스 파일 명명 규칙
 ##### Layout
+
 | prefix | 説明 |
 | - | - |
 | activity_ | Activity Layout |
@@ -341,6 +356,7 @@ class Sample {
 
 ## Swift
 ### 인수 갯수가 많은 func을 정의한 때
+
 ```swift
 public func createConfirmDialog(
 	title: String,
