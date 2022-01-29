@@ -5,7 +5,6 @@
 - [코딩 기술](coding_tech.md)
 - [Design Patterns](design_patterns.md)
 - [Coding Style](coding_style.md)
-- [수학](math.md)
 - [프로그래밍 문제](programming_test.md)
 
 ## 언어 및 프레임워크
