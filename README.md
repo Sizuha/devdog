@@ -23,7 +23,7 @@
 - [PHP](lang/php.md)
 
 ### Script
-- [Python](lang/python.md)
+- [Python](lang/python/)
 - [bash](lang/bash.md)
 - [zsh](lang/zsh.md) (※ macOS 10.15부터 기본 쉘이 bash에서 zsh로 변경됨)
 
