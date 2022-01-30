@@ -77,11 +77,7 @@ class Dice12 implements IDice {
     protected int checkLimit(int value) {
         final int min = getMin();
         final int max = getMax();
-        return (value < min)
-                ? min
-                : (value > max)
-　　　　                ? max
-     　　　　           : value;
+        return (value < min) ? min : (value > max) ? max : value;
     }
 
     public int roll(int bonus) {
@@ -225,7 +221,7 @@ int[] a = new int[] {53, 74, 57, 83, 25, 47, 42, 48, 57, 25, 20, 42, 96, 31};
 ### Q5. 테트리스
 Q. 다음 6x4 배열의 내용을 반시계방향으로 90도 회전 시킨 4x6 배열을 만드는 코드를 작성.
 
-```java
+```
 char[][] board = { 
 	{'＊','＊','　_','_　','_　','_　'}, 
 	{'＊','＊','_　','_　','_　','_　'}, 
