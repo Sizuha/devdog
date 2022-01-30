@@ -357,50 +357,84 @@ class Sample {
 | sub_ | 다른 Layout에서 include 태그 등으로 불려지는 Layout |
 
 ## Swift
-### 인수 갯수가 많은 func을 정의한 때
+### 명명법
+#### UI Controls
+- 입력 컨트롤: inputXxxx
+- 표시용 컨트롤(입력/불러온 내용을 표시하는 용도): dispXxxx
+- 버튼: btnXxxx
+- 라벨: lblXxxx
+- 이미지 표시: imgXxxx
+- UIBarButtonItem: bbiXxxx
 
+### Class
 ```swift
-public func createConfirmDialog(
-	title: String,
-	message: String,
-	okText: String = "OK",
-	cancelText: String = "Cancel",
-	onOkClick: ((UIAlertAction) -> Void)? = nil,
-	onCancelClick: ((UIAlertAction) -> Void)? = nil
-) -> UIAlertController {
-	SizAlertBuilder()
-		.setTitle(title)
-		.setMessage(message)
-		.addAction(title: cancelText, handler: onCancelClick)
-		.addAction(title: okText, handler: onOkClick)
-		.create()
+class HomeViewController: UIViewController {
+// ...
 }
 
-class XXX {
-// ...
-	public init(
-		type: CellType = .text,
-		height: (()->CGFloat)? = nil,
-		label: String = "",
-		bindData: (()->Any?)? = nil,
-		hint: String = "",
-		customViewID: String? = nil,
-		onSelect: ((_ index: IndexPath)->Void)? = nil,
-		onCreateCell: ((UITableViewCell)->Void)? = nil,
-		onWillDisplay: ((UITableViewCell)->Void)? = nil,
-		onChanged: ((_ value: Any?)->Void)? = nil
-	) {
-		self.type = type
-		self.height = height
-		self.label = label
-		self.bindData = bindData
-		self.hint = hint
-		self.customViewID = customViewID
-		self.onSelect = onSelect
-		self.onCreateCell = onCreateCell
-		self.onWillDisplay = onWillDisplay
-		self.onChanged = onChanged
-	}
-// ...
+// 클래스 선언부가 긴 경우
+class HomeViewController
+: UIViewController
+, AVAudioRecorderDelegate
+, CLLocationManagerDelegate {	
+	@IBOutlet weak var txtDisplay: UILabel!
+	@IBOutlet weak var btnStart: UIButton!
+	@IBOutlet weak var btnStop: UIButton!
+
+	// . . .
+}
+```
+
+### function / method
+인수가 긴 경우
+```swift
+func getTodayData(
+	date: SizYearMonthDay,
+	onResponse: @escaping (
+		_ resultCode: SimpleApiResultCode,
+		_ today: CheckInOut?,
+		_ today_vocation: Vocation?,
+		_ yesterday: CheckInOut?
+	) ->Void
+) -> Bool {
+	//...
+}
+```
+
+### 제어문
+#### if ~ else
+```swift
+if cond {
+    // ...
+}
+else {
+    // ...
+}
+```
+
+#### Switch
+switch와 case/default는 같은 열에
+```swift
+switch xxx {
+case A:
+    // ...
+
+case B:
+    // ...
+
+case C:
+    // ...
+
+default: break // default는 반드시 포함 시킬 것!
+}
+```
+
+#### do ~ catch
+```swift
+do {
+    try some()
+}
+catch someException {
+    // ...
 }
 ```
