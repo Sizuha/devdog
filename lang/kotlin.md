@@ -336,6 +336,7 @@ fun foo() {
 
 ### Binary operations
 | Expression | Translated to |
+| - | - |
 | a + b | a.plus(b) |
 | a - b | a.minus(b) |
 | a * b | a.times(b) |
@@ -347,6 +348,7 @@ fun foo() {
 
 ### Indexed access operator
 | Expression | Translated to |
+| - | - |
 | a\[i] | a.get(i) |
 | a\[i, j] | a.get(i, j) |
 | a\[i] = b | a.set(i, b) |
@@ -354,11 +356,13 @@ fun foo() {
 
 ### Invoke operator
 | Expression | Translated to |
+| - | - |
 | a() | a.invoke() |
 | a(i) | a.invoke(i) |
 
 ### Augmented assignments
 | Expression | Translated to |
+| - | - |
 | a += b | a.plusAssign(b) |
 | a -= b | a.minusAssign(b) |
 | a *= b | a.timesAssign(b) |
@@ -366,11 +370,13 @@ fun foo() {
 
 ### Equality and inequality operators
 | Expression | Translated to |
+| - | - |
 | a == b | a?.equals(b) ?: (b === null) |
 | a != b | !(a?.equals(b) ?: (b === null)) |
 
 ### Comparison operators
 | Expression | Translated to |
+| - | - |
 |a > b	|a.compareTo(b) > 0 |
 |a < b	|a.compareTo(b) < 0 |
 |a >= b	|a.compareTo(b) >= 0 |
