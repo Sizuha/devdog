@@ -20,7 +20,7 @@
 - [HTML/HTML5](lang/html.md)
 - [JavaScript](lang/javascript.md)
 - [REST API](lib/rest.md)
-- [Spring Boot](lib/spring_boot.md)
+- [Spring Boot](java/spring_boot.md)
 - [PHP](lang/php.md)
 
 ### Script
