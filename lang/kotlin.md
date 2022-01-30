@@ -56,7 +56,9 @@ val bytes = 0b11010010_01101001_10010100_10010010
 
 ### Characters
 
-```Char```
+```kotlin
+Char
+```
 
 Character literals go in single quotes: '1'. 
 
