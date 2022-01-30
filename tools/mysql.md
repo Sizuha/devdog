@@ -123,9 +123,7 @@ $ sudo /usr/local/mysql/support-files/mysql.server start
 ```
 
 이후에, mysql 콘솔에서 만약 다음과 같은 에러가 나온다면...
-```
-ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement. 
-```
+> ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement. 
 
 다음과 같이 암호를 다시 설정해 준다.
 ```
