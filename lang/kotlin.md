@@ -26,8 +26,9 @@ val t = "xyz"
 
 ## Basic Types
 ### Numbers 
+
 | Type | Bit width |
-| - | - |
+| ---- | --------- |
 | Double | 64 |
 | Float | 32 |
 | Long | 64 |
