@@ -27,6 +27,7 @@ $ sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclien
  
 **DYLD_LIBRARY_PATH**를 추가해도, sudo 명령을 쓸때는 이 설정이 무시되면서 아래와 같은 메세지가 나온다. 
 > dyld: DYLD_ environment variables being ignored because main executable (/usr/bin/sudo) is setuid or setgid
+
 그냥 ln 명령으로 링크를 걸어두는게 속편하겠다.
 
 #### virtualenv 환경에서
