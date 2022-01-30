@@ -14,7 +14,6 @@
 - [C#](lang/csharp/)
 - [Java](lang/java/)
 - [Kotlin (for Android)](lang/kotlin.md)
-- [SQL](lang/sql.md)
 
 ### Web/Server
 - [HTML/HTML5](lang/html.md)
