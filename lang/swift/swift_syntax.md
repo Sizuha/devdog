@@ -1670,7 +1670,7 @@ func allItemsMatch<C1: Container, C2: Container>
 ```
 
 ### Associated Types
-When defining a protocol, it is sometimes useful to declare one or more associated types as part of the protocol’s definition. An associated type gives a placeholder name to a type that is used as part of the protocol. The actual type to use for that associated type isn’t specified until the protocol is adopted. Associated types are specified with the '''associatedtype''' keyword.
+When defining a protocol, it is sometimes useful to declare one or more associated types as part of the protocol’s definition. An associated type gives a placeholder name to a type that is used as part of the protocol. The actual type to use for that associated type isn’t specified until the protocol is adopted. Associated types are specified with the **associatedtype** keyword.
 
 ```swift
 protocol Container {
