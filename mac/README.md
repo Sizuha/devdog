@@ -27,7 +27,7 @@ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallme
 
 * hosts: /private/etc/hosts
 
-#### Web Server ====
+#### Web Server
 
 - Web Root: /Library/WebServer/Documents
 - User Web Root: /Users/사용자_이름/Sites
