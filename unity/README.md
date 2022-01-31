@@ -240,7 +240,7 @@ Assets 디렉토리 하위에 다음과 같은 특별한 디렉토리를 둘 수
 
 ## Script
 
-[Unity3D Script](unity_script.md) 참조.
+[Unity Script](unity_script.md) 참조.
 
 ## 게임 개발
 * [Unity 게임개발](unity_game_dev.md)  참조.
