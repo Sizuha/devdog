@@ -15,7 +15,7 @@ xxxxxxx.xcodeproj 안에 있는 project.pbxproj 파일에서 **developmentRegion
 
 ## 문제 및 해결
 
-### 빌드가 실행이 안될 때 ===
+### 빌드가 실행이 안될 때
 > The certificate used to sign **APP_NAME** has either expired or has been revoked. An updated certificate is required to sign and install the application.
 
 1. macOS에서 키체인 액세스 프로그램 실행
