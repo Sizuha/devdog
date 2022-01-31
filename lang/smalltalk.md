@@ -14,18 +14,21 @@
 Smalltalk에서는 특별 상수 세 개와 특별 변수 세 개, 모두 여섯 개의 '값'(value)을 나타내는 데에 지정어가 쓰인다.
  
 - true
+
 True 클래스의 유일한 실체(instance). 논리값이다.
 ```smalltalk
 result := true
 ```
 
 - false
+
 False 클래스의 유일한 실체. 논리값이다.
 ```smalltalk
 result := false
 ```
 
 - nil
+
 UndefinedObject 클래스의 유일한 실체.
 상태가 정의되지 않은 객체. Null값.
 변수를 초기화하지 않으면 nil을 가리킨다.
@@ -34,12 +37,14 @@ garbage := nil
 ```
 
 - self
+
 현재 메서드가 실행되고 있는 객체를 가리킨다.
 ```smalltalk
 self blahBlah
 ```
 
 - super
+
 self와 같은 객체를 가리키지만, 메서드(method)를 찾을 때 자기보다 한 단계 높은 객체로부터 찾는다.
 ```smalltalk
 super new initialize
@@ -49,6 +54,7 @@ super new initialize
 Smalltalk에는 다음의 두 가지 연산자가 존재한다.
 
 - :=
+
 변수에 값을 대입한다. 오른쪽에서 왼쪽으로 결합한다.
 Smalltalk의 모든 변수는 '참조 의미'(reference sementic)를 갖는다.
 ```smalltalk
@@ -56,6 +62,7 @@ count := sum := 0.
 ```
 
 - ^
+
 메서드에서 발신자(sender)로 객체를 돌려주고, 메서드의 실행을 끝낸다.
 이 연산자가 없는 메서드는, self를 돌려준다.
  ^results
@@ -63,7 +70,8 @@ count := sum := 0.
 ### 문법 구성 요소 (Syntactical components)
 Smalltakl에서는 특수한 기호를 사용하여 기초적인 객체를 표현한다.
 
-- \[ ]
+- \[ \]
+
 코드의 블럭. 이 안에 Smalltalk의 코드가 들어간다.
 들어간 코드는 바로 실행되지 않고 미뤄진다(deferred).
 BlockClosure 클래스의 실체가 된다.
@@ -71,7 +79,8 @@ BlockClosure 클래스의 실체가 된다.
 [ :a b | | sum | sum := a + b ]
 ```
 
-- #
+- \#
+
 Symbol 클래스의 실체를 만든다.
 공백이 포함된 symbol을 만들려면 #' ' 를 사용한다.
 ```smalltalk
@@ -79,52 +88,63 @@ Symbol 클래스의 실체를 만든다.
 ```
 
 - #( )
+
 배열, 즉 Array 클래스의 실체를 만든다.
 ```smalltalk
 #(1 2 'apple')
 ```
 
 - #\[ ]
+
 원소가 바이트인 배열, 즉 ByteArray 클래스의 실체를 만든다.
 ```smalltalk
 #[16r0D 16r0A]
 ```
 
 - \| |
+
 임시변수를 정의한다.
 ```smalltalk
 | count sum |
 ```
 
 - $
+
 문자(Character)의 실체를 만든다.
- $a
+```smalltalk
+$a
+```
 
 - ' '
+
 문자열(String)의 실체를 만든다.
 ```smalltalk
 'Hello world!'
 ```
 
 - " "
+
 무시한다. 설명문(comment)을 쓸 때 사용한다.
 ```smalltalk
 "This is a comment."
 ```
 
 - .
+
 여러 개의 Smalltalk 문장을 분리한다.(문장 마침표가 아니다)
 ```smalltalk
 self foo. self bar. self blahBlah
 ```
 
 - ;
+
 하나의 객체에 메시지를 연속해서(cascading) 보낸다.
 ```smalltalk
 self foo; bar; blahBlah
 ```
 
 - :
+
 키워드(keyword)를 만든다.
 ```smalltalk
 5 between: 1 and: 10
@@ -138,18 +158,21 @@ Block 매개변수(parameter)를 만든다.
 Smalltalk에는 모두 세 종류의 메시지가 있다.
  
 - 단항 메시지(unary message)
+
 인자가 없는 메시지
 ```smalltalk
 200 factorial
 ```
 
 - 이항 메시지(binary message)
+
 특수기호를 사용한 메시지. 한 개의 인자를 가진다.
 ```smalltalk
 3 + 4
 ```
 
 - 키워드 메시지(keyword message)
+
 여러 개의 인자를 키워드로 분리하여 전달한다.
 ```smalltalk
 5 between: 1 and: 10
@@ -179,6 +202,7 @@ Smalltalk에는 모두 세 종류의 메시지가 있다.
 문자열이나 배열 등, 문법 항목에서 설명한 것들은 생략.
 
 - 정수
+
 ```smalltalk
 123 "123"
 16rFFFF "65535"
@@ -187,6 +211,7 @@ Smalltalk에는 모두 세 종류의 메시지가 있다.
 10진 표현은 그냥 그대로 하면 되고, 2진법이나 16진법 등의 표현은 r 키워드를 이용한다.
 
 - 실수
+
 ```smalltalk
 123.456 "123.456"
 16rFFFF.AB "65535.66796875"
