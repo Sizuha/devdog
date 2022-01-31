@@ -393,4 +393,4 @@ void setTimeout(CURL* curl, int conn_timeout, int http_timeout)
 }
 ```
 
-milliseconds 단위로 설정하려면 '''CURLOPT_TIMEOUT_MS''' 옵션으로 설정.
+milliseconds 단위로 설정하려면 **CURLOPT_TIMEOUT_MS** 옵션으로 설정.
