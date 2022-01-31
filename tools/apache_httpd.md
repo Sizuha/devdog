@@ -6,7 +6,7 @@ Mac OS X에서 기본으로 설치된 apache2 경로
 /usr/libexec/apache2
 ```
 
-## HTTP 서버 시작 및 종료 ==
+## HTTP 서버 시작 및 종료
 
 ```
 시작
