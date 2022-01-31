@@ -25,14 +25,12 @@
 ### Script
 - [Python](lang/python/)
 - [bash](lang/bash.md)
-- [zsh](lang/zsh.md) (※ macOS 10.15부터 기본 쉘이 bash에서 zsh로 변경됨)
 
 ### 좀 마이너한 것들
 - [Smalltalk](lang/smalltalk.md)
   - [Squeak](lang/squeak.md)
 
 ## Libraries
-- [DirectX](lib/directx.md)
 - [curl](lib/curl.md)
 - [정규표현식](lib/regx.md)
 
