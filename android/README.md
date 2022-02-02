@@ -53,9 +53,9 @@ http://developer.android.com/distribute/tools/promote/linking.html
   - http://d.hatena.ne.jp/kinokorori/20130710/1373467687
   - http://developer.android.com/google/play/expansion-files.html
 
-구글 플레이에서 업로드 가능한 apk가 50MB 이하로 제한이 되어 있기에, 추가 데이터를 확장 데이터 형식(obb 포맷)으로 업로드 해야 한다. (zip 형식도 가능하지만, 확장자는 obb 여야 한다)
+구글 플레이에서 업로드 가능한 apk가 50MB 이하로 제한이 되어 있기에, 추가 데이터를 확장 데이터 형식(obb 포맷)으로 업로드 해야 한다.<br/>(zip 형식도 가능하지만, 확장자는 obb 여야 한다)
 
-단 obb 파일 이름은 다음과 같은 형식으로 되어 있어야 한다.
+단 obb 파일 이름은 다음과 같은 형식으로 되어 있어야 한다.<br/>
 ```[main | patch].[versionCode].[package-name].obb```
 
 **APK 100MB 지원**<br/>
