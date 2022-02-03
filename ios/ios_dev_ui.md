@@ -66,14 +66,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ### Storyboard 없이 앱 개발 (iOS13 이상만 지원할 경우)
 
-\1. 프로젝트 설정의 General → Deployment Info 그룹 → Main interface 항목을 '''비워놓는다'''.
+1. 프로젝트 설정의 General → Deployment Info 그룹 → Main interface 항목을 **비워놓는다**.
 
-\2. 프로젝트에서 스토리보드 파일 삭제
+2. 프로젝트에서 스토리보드 파일 삭제
 
-\3. Info.plist에서 스토리보드 파일연결 제거<br/>
+3. Info.plist에서 스토리보드 파일연결 제거<br/>
 ![Swift-del-storyboard-ios13](Swift-del-storyboard-ios13.png)
 
-\4. SceneDelegate.swift 수정
+4. SceneDelegate.swift 수정
 ```swift
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }

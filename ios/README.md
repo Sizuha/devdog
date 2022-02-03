@@ -191,10 +191,10 @@ _Save_ 버튼 클릭.
 
 [iOS In-App Purchase](ios_inapp.md) 참조.
 
-## 문제 및 해결 ==
+## 문제 및 해결
 
 [iOS 문제 및 해결](ios_faq.md) 참조
 
-## iOS App 개발 ==
+## iOS App 개발
 
 [iOS App 개발](ios_dev.md) 참조.
