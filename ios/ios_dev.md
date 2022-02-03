@@ -692,7 +692,7 @@ App의 Document 경로에 있는 파일들을 _File App_의 _このiPhone内_ �
    1. File → New → Project... → Cocoa Touch Framework
 1. Edit Scheme... → Run → Build Configuration = Release로 변경
 1. Build Settings 변경
-   1. [iOS Framework의 bitcode 문제](ios_framework_bitcode.md) 참조.
+   1. [iOS Framework의 bitcode 문제](#Framework의-bitcode-문제) 참조.
 
 ### Frameowrk 빌드 및 사용
 프레임워크를 빌드(Build)하고, 프로젝트 트리의 Products 그룹에 있는 xxx.frameowrk 파일에서 오른쪽 마우스 메뉴를 열고 **Show in Finder**를 선택하면, 프레임워크 파일이 있는 경로가 열린다.
@@ -762,9 +762,6 @@ git tag 1.0.0
 git push --tags
 ```
 버전은 반드시 "메이져.마이너.패치" 방식으로 붙일 것.
-
-## Apple Watch App
-[Apple Watch App](apple_watch_app.md) 참조.
 
 ## App Store 검수
 [App Store 검수](app_store.md) 참고.
