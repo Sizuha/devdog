@@ -197,4 +197,5 @@ _Save_ 버튼 클릭.
 
 ## iOS App 개발
 
-[iOS App 개발](ios_dev.md) 참조.
+- [iOS App 개발](ios_dev.md)
+- [iOS 보안](ios_security.md)
