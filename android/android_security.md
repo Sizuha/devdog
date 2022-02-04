@@ -1,5 +1,15 @@
 # Android Security
 
+## ```file://``` 링크 무효화
+
+WebSettings의 allowFileAccess 속성을 false로 설정.
+```kotlin
+mWebView?.settings?.apply {
+    // ...
+    allowFileAccess = false // セキュリティー問題により、非活性化
+}
+```
+
 ## SSL証明書のピン留め（Pinning）
 
 https://developer.android.com/training/articles/security-config
