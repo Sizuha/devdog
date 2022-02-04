@@ -153,7 +153,7 @@ if (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this) == C
 ```
 
 JavaScript Interface 클래스는 난독화에서 예외처리
-```gradle
+```
 # proguard-rules.pro
 
 # If your project uses WebView with JS, uncomment the following
@@ -165,7 +165,7 @@ JavaScript Interface 클래스는 난독화에서 예외처리
 ```
 
 Java JSON Web Token 라이브러리(JWT) 사용시
-```gradle
+```
 -keepattributes InnerClasses
 
 -keep class io.jsonwebtoken.** { *; }
