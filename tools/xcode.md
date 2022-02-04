@@ -1,5 +1,11 @@
 # Xcode
 
+## Install
+
+mac용 App Store에서 설치가 가능하지만, 별로 권장하지 않음.
+
+[Apple Developer 다운로드](https://developer.apple.com/download/all/) 페이지에서 직접 받아서 설치하는게 좋다.
+
 ## Debug
 
 ### Keys
