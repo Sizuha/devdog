@@ -60,6 +60,17 @@ https://re-engines.com/2018/12/26/safetynet-attestation-api-basic/
 
 Google의 SafetyNet Attestation API를 활용.
 
+1. [Google API Consoleのライブラリページ](https://console.developers.google.com/apis/library?hl=ja)に移動します。
+
+1. **Android Device Verification API**を検索して選択します。Android Device Verification API ダッシュボードの画面が表示されます。
+
+1. API がまだ有効になっていない場合は、[有効にする] をクリックします。
+
+1. [認証情報を作成] ボタンが表示された場合は、それをクリックして API キーを生成します。表示されなかった場合は、[すべての API 認証情報] プルダウン リストをクリックしてから、Android Device Verification API を有効にしたプロジェクトに関連付けられている API キーを選択します。
+
+1. 左のサイドバーで、[認証情報] をクリックします。表示された [API キー] をコピーします。
+
+
 API결과값을 해석하기 위해서느 JWT라이브러가 필요하지만, 서버에 전송해서 결과를 해석하는 경우에 앱에서는 필요없다.
 
 ```kotlin
