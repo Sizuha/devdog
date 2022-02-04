@@ -1,5 +1,20 @@
 # Android Security
 
+## 권한 설정
+
+꼭 필요한 경우가 아니면, 아래 권한은 삭제
+- READ_EXTERNAL_STORAGE
+- WRITE_EXTERNAL_STORAGE
+
+## 암호화 되지 않은 통신
+
+AndroidManifest.xml에서, android:usesCleartextTraffic 설정을 false로 하면 HTTPS등 암호화된 통신만 허용된다.
+```xml
+<application
+        . . .
+        android:usesCleartextTraffic="false">
+```
+
 ## ```file://``` 링크 무효화
 
 WebSettings의 allowFileAccess 속성을 false로 설정.
