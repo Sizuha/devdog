@@ -360,3 +360,15 @@ public extension String {
 
 println("abcd1234".isMatch(?="^[0-9a-zA-Z]+$")) // true
 ```
+
+
+## IO
+
+### TextFile 읽기 (한번에)
+
+```swift
+do {
+    let content = try String(contentsOf: url, encoding: .utf8)
+}
+catch { ... }
+```
