@@ -390,7 +390,7 @@ C 언어와 마찬가지로, 산술연사과 대입이 결합된 형태의 연�
 += -= *= %=
 ```
 
-### Arithmetic Operators ===
+### Arithmetic Operators
 ```
 + - * / %
 ```
