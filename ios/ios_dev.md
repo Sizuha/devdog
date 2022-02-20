@@ -21,10 +21,14 @@
 1. 다른 방법으로는, App에서  URL 뒤에 쿼리 스트링을 붙이고 항상 다른 값이 들어가게 한다.
 
 두번째 방법은 App에서 간단히 처리가 가능한데, 예를들어 아래와 같은 URL로 파일을 받는 다고 하면,
-```https://www.sample.com/data/some.png```
+```
+https://www.sample.com/data/some.png
+```
 
 URL 뒤에 쿼리 스트링(?로 시작되는 부분)을 붙인다.
-```https://www.sample.com/data/some.png?nocache=타임스탬프값```
+```
+https://www.sample.com/data/some.png?nocache=타임스탬프값
+```
 
 이렇게 매번 호출되는 URL이 달라지면 캐시를 쓰지 않고, 항상 서버에서 파일을 받아오게 된다.
 
