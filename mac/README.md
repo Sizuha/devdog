@@ -52,19 +52,7 @@ export PATH=$PATH:추가할PATH
 
 [Command Line Tools](cmd_tools.md) 참조.
 
-## Remote Desktop
-### 화면공유(VNC)
-Mac OS X는 VNC기능을 내장하고 있다.
-
-#### VNC 접속
-원격 관리 대상의 Mac에서, 환경설정 > 원격관리 옵션을 활성화 시킨다.
-
-Finder 등에서 다음 형식의 URL로 접속.
-```
-vnc://{remote-address}/
-```
-
-## 콘솔
+## 콘솔(터미널)
 
 ### rm
 디렉토리 삭제(하위 내용까지 포함)
@@ -88,7 +76,6 @@ xargs -I{} command {}
 ```
 **-I** 옵션으로 지정한 문자 **{}**를 명령행 인자 전체로 치환하게 해준다.
 
-## Tips
 ### 터미널로부터 알림 받기
 
 tput 명령을 사용해 터미널이 비활성 상태일 때 Dock에 있는 터미널에 알림을 보낼 수 있다.
@@ -101,6 +88,7 @@ ping -c 5 www.google.com && tput bel
 ```
 이라고 한다면, 핑을 보내는 일을 하는 동안 웹서핑 등 다른 작업을 하고 있다보면, Dock에서 터미널이 통통 튀어 오르면서 알림을 보낸다. 이때 Dock을 보면 터미널 아이콘에 숫자배지가 붙어 있다.
 
+## Tips
 
 ### 디스크 이미지 관리
 대상 폴더 이하의 내용들을 dmg로 묶는다.
@@ -131,13 +119,6 @@ $ defaults write com.apple.finder AppleShowAllFiles -bool false
 $ killall Finder
 ```
 
-### Finder
-#### Cut and Paste
-1. Command + C
-1. Command + Option + V
-
-Windows에서 처럼 자른(Cut) 다음에 붙여넣는게 아니라, 우선 복사(Copy)한 다음에 붙여넣을 때 옵션키를 누르것이 포인트.
-
 ## 문제 및 해결
 ### 압출 풀때 주의
 
@@ -148,3 +129,7 @@ _tar_ 종류의 파일은 대게 UNIX 퍼미션 정보가 담겨있다. 이런�
 ```
 $ killall Dock
 ```
+
+## macOS App 활용
+
+[macOS App 활용](mac_apps.md) 참조.
