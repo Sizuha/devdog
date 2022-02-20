@@ -555,8 +555,7 @@ void stopSpeech()
 ## Custom URL Scheme
 URL을 이용해 다른 앱을 실행시키고 정보를 전달할 수 있다.
 
-https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app
-
+[참조 사이트](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app)
 
 ### 호출하는 App
 
