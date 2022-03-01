@@ -30,7 +30,7 @@
     }
 ```
 
-## Development Languageの変更
+## Development Language（アプリの基本言語）の変更
 
 1. Close Xcode.
 1. Open your **project.pbxproj** in a text editor
