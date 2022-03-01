@@ -1,7 +1,7 @@
 
-# Storyboardを使わない、iOSプロジェクトの作成手順
+# Storyboardを使わない、iOSプロジェクトの生成手順
 
-まず、XCodeから新しい 「iOS App」プロジェクトを作成。
+まず、XCodeから新しい 「iOS App」プロジェクトを生成。
 
 以後、下記の手順通りに。（※ Deployment tagetは「iOS 13.0」以上とする）
 
